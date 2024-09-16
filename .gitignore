@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django
+db.sqlite3
+my_django_db.sqlite3
+
+# Миграции
+*/migrations/
+
+# Виртуальное окружение
+.venv/
+venv/
+
+# Конфигурационные файлы
+.env
+
+# IDE/Editor directories and files
+.idea/
+.vscode/
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+
+# Logs and local database files
+*.log
+*.sqlite3
+
+# Static files
+/static/
+
+# Media files
+/media/
+
+# PyCharm
+*.idea/
+
+# JetBrains IDEs
+.idea/
+*.iml

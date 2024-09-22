@@ -15,12 +15,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-
-from django.contrib import admin
 from django.urls import path, include
+from django.http import HttpResponse
+
+
+# Определяем простую функцию для корневого пути
+def home(request):
+    return HttpResponse("Welcome to the homepage!")
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('hello/', include('myapp.urls')),  # Измените этот путь на 'hello/'
+    path('admin/', admin.site.urls),  # Путь для панели администратора
+    path('hello/', include('myapp.urls')),  # Подключаем пути из приложения 'myapp'
+    path('', home),  # Путь для корневого URL, который вернет приветственное сообщение
 ]
+

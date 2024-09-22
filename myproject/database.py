@@ -16,4 +16,3 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 # Базовый класс для создания моделей с использованием SQLAlchemy
 Base = declarative_base()
-
